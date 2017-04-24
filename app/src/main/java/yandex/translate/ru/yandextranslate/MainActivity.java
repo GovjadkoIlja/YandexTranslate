@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnInputLanguage.setText(textLanguageButton(lanFrom.fullName));
         btnOutputLanguage.setText(textLanguageButton(lanTo.fullName));
 
-        if (etText.getText().toString().trim().length() == 0) {  //Если поле текста пустое -- скрываем кнопку избранных и удаления
+        if (etText.getText().toString().trim().length() == 0) {  //Если поле текста пустое - скрываем кнопку избранных и удаления
             btnDelete.setVisibility(View.INVISIBLE);
             btnInFavorite.setVisibility(View.INVISIBLE);
         }
