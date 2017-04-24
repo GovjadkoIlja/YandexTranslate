@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+    <ImageButton
+        android:id="@+id/btnFavorite"
+        android:layout_width="22dp"
+        android:layout_height="26dp"
+        android:src="@drawable/nofavorite"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutWords"
+        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:layout_toEndOf="@id/btnFavorite"
+        >
+       <TextView
+            android:id="@+id/tvWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tvTranslation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/colorGreyText"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLanguages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/colorGreyText"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
