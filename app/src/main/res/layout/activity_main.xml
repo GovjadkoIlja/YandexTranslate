@@ -58,7 +58,9 @@
             android:gravity="top"
             android:lines="4"
             android:hint="Введите текст для перевода"
-            android:text="">
+            android:text=""
+            android:textCursorDrawable="@null">
+
         </EditText>
         <ImageButton
             android:id="@+id/btnPast"

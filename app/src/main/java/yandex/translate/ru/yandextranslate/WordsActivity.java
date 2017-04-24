@@ -106,7 +106,7 @@ public class WordsActivity extends AppCompatActivity implements View.OnClickList
             btnHistory.setImageResource(R.drawable.enablehistory);
             c = db.query("words", null, null, null, null, null, null);
         }
-
+        
         words = toArrayList(c); //Переводим из курсора в список языков
 
         c.close();

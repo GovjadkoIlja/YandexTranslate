@@ -163,6 +163,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (etText.getText().toString().trim().length() == 0) {    //Прячем или показываем стереть и добавить в избранные
             btnDelete.setVisibility(View.INVISIBLE);
             btnInFavorite.setVisibility(View.INVISIBLE);
+            tvTranslation.setText("");
+            dictionaryAnwsers.clear();
+            return;
         } else {
             btnDelete.setVisibility(View.VISIBLE);
         }
@@ -667,6 +670,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return;
             }
 
+            if (etText.toString().trim().length() == 0) { //Если пока работали асинхронно текст стерли
+                dictionaryAnwsers.clear();
+                tvTranslation.setText("");
+                return;
+            }
+
             if ((trans.length() > 2) && (etText.getText().toString().trim().length() > 0))  //Если не только квадратные скобки
                 btnInFavorite.setVisibility(View.VISIBLE);
 
@@ -743,6 +752,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             if (anwser.equals(" "))
                 return;
+
+            if (etText.toString().trim().length() == 0) { //Если пока работали асинхронно текст стерли
+                dictionaryAnwsers.clear();
+                tvTranslation.setText("");
+                return;
+            }
 
             if (anwser.length() > 17) { //Если словарь знает это слово
                 btnInFavorite.setVisibility(View.VISIBLE);
