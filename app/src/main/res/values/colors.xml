@@ -9,4 +9,5 @@
     <color name="colorBlueText">#4B7893</color>
     <color name="colorBrownText">#8D634D</color>
     <color name="colorSteelText">#7D8CA9</color>
+    <color name="colorBackground">#EEEEEE</color>
 </resources>
