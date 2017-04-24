@@ -287,6 +287,7 @@ public class WordsActivity extends AppCompatActivity implements View.OnClickList
                     layoutNoFavorites.setVisibility(View.VISIBLE); //Показываем картинку, что нет избранных
 
                     c.close();
+
                 } else { //Если мы в истории
                     db.delete("words", null, null);
                     layoutNoHistory.setVisibility(View.VISIBLE); //Показываем картинку, что нет истории
