@@ -167,10 +167,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btnDelete.setVisibility(View.VISIBLE);
         }
 
-        if (fromCash > 0) {
+        if (fromCash > 0)
             btnInFavorite.setVisibility(View.VISIBLE);
-            System.out.println("AAAAAAAAAAAAAAAAAa");
-        }
 
         Map<String, String> mapJson = new HashMap<>(); //Создаем JSON-файл для отправки запроса
         mapJson.put("text", "\"" + etText.getText().toString() + "\""); //Переводимый текст

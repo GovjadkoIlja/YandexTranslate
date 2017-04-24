@@ -250,9 +250,9 @@ public class WordsActivity extends AppCompatActivity implements View.OnClickList
         AlertDialog.Builder quitDialog = new AlertDialog.Builder(this);
 
         if (isFavorites) //В зависимости от того где мы -- разные заголовки диалогового окна
-            quitDialog.setTitle("Вы уверенны, что хотите отчистить все избранные?");
+            quitDialog.setTitle("Вы уверены, что хотите очистить все избранные?");
         else
-            quitDialog.setTitle("Вы уверенны, что хотите отчистить всю историю?");
+            quitDialog.setTitle("Вы уверены, что хотите очистить всю историю?");
 
         quitDialog.setPositiveButton("Да", new DialogInterface.OnClickListener() {
             @Override

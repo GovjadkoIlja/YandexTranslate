@@ -1,9 +1,5 @@
 package yandex.translate.ru.yandextranslate;
 
-/**
- * Created by Илья on 08.04.2017.
- */
-
 public class Word {
     int id;
     String word;
